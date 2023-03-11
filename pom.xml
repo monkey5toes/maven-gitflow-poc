@@ -4,7 +4,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>au.gricesoft</groupId>
     <artifactId>maven-gitflow-poc</artifactId>
-    <version>0.0.4-SNAPSHOT</version>
+    <version>1.0.0</version>
     <name>maven-gitflow-poc</name>
     <description>maven-gitflow-poc</description>
 
@@ -30,8 +30,9 @@
             <version>1.19.0</version>
             <configuration>
 			<incrementVersionAtFinish>true</incrementVersionAtFinish> <!-- when features done -->
-                <!-- optional configuration -->
-            </configuration>
+   <gitFlowConfig>
+        <productionBranch>main</productionBranch>             <!-- optional configuration -->
+            </gitFlowConfig></configuration>
         </plugin>
 		
 		
