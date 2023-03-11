@@ -4,7 +4,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>au.gricesoft</groupId>
     <artifactId>maven-gitflow-poc</artifactId>
-    <version>0.0.2-addPomFile-SNAPSHOT</version>
+    <version>0.0.3-addPomFile-SNAPSHOT</version>
     <name>maven-gitflow-poc</name>
     <description>maven-gitflow-poc</description>
 
