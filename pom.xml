@@ -31,7 +31,7 @@
             <configuration>
 			<incrementVersionAtFinish>true</incrementVersionAtFinish> <!-- when features done -->
    <gitFlowConfig>
-        <productionBranch>master</productionBranch>             <!-- optional configuration -->
+        <productionBranch>main</productionBranch>             <!-- optional configuration -->
             </gitFlowConfig></configuration>
         </plugin>
 		
