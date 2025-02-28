@@ -4,7 +4,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>au.gricesoft</groupId>
     <artifactId>maven-gitflow-poc</artifactId>
-    <version>1.0.1-SNAPSHOT</version>
+    <version>1.0.1-update-it-SNAPSHOT</version>
     <name>maven-gitflow-poc</name>
     <description>maven-gitflow-poc</description>
 
