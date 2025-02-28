@@ -36,9 +36,10 @@
                 <groupId>com.amashchenko.maven.plugin</groupId>
                 <artifactId>gitflow-maven-plugin</artifactId>
                 <version>1.21.0</version>
-<!--                <configuration>-->
+                <configuration>
+                    <gitPushOptions>merge_request.create merge_request.target=develop</gitPushOptions>
                     <!-- optional configuration -->
-<!--                </configuration>-->
+                </configuration>
             </plugin>
         </plugins>
     </build>
