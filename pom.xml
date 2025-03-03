@@ -37,6 +37,9 @@
                 <artifactId>gitflow-maven-plugin</artifactId>
                 <version>1.21.0</version>
                 <configuration>
+                    <gitFlowConfig>
+                        <productionBranch>main</productionBranch>
+                    </gitFlowConfig>
                     <incrementVersionAtFinish>true</incrementVersionAtFinish>
                     <gitPushOptions>merge_request.create merge_request.target=develop</gitPushOptions>
                     <!-- optional configuration -->
