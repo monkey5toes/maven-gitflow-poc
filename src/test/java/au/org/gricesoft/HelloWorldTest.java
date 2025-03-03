@@ -7,6 +7,7 @@ class HelloWorldTest {
 
     @Test
     void getHELLO() {
+        //spastic
         Assertions.assertEquals("Hello World!", HelloWorld.getHELLO());
         //dork changes
     }
