@@ -40,6 +40,7 @@
                     <incrementVersionAtFinish>true</incrementVersionAtFinish>
                     <gitPushOptions>merge_request.create merge_request.target=develop</gitPushOptions>
                     <!-- optional configuration -->
+                    <fetchRemote>false</fetchRemote>
                 </configuration>
                 <dependencies>
                     <dependency>
