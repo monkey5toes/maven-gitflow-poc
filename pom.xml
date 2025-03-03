@@ -4,7 +4,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>au.gricesoft</groupId>
     <artifactId>maven-gitflow-poc</artifactId>
-    <version>1.0.0</version>
+    <version>1.0.3</version>
     <name>maven-gitflow-poc</name>
     <description>maven-gitflow-poc</description>
 
@@ -12,7 +12,16 @@
         <java.version>11</java.version>
     </properties>
 
+    <dependencies>
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-engine</artifactId>
+            <version>5.11.2</version>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
     <build>
+
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
@@ -23,19 +32,27 @@
                     <target>${java.version}</target>
                 </configuration>
             </plugin>
-			
-			 <plugin>
-            <groupId>com.amashchenko.maven.plugin</groupId>
-            <artifactId>gitflow-maven-plugin</artifactId>
-            <version>1.19.0</version>
-            <configuration>
-			<incrementVersionAtFinish>true</incrementVersionAtFinish> <!-- when features done -->
-   <gitFlowConfig>
-        <productionBranch>main</productionBranch>             <!-- optional configuration -->
-            </gitFlowConfig></configuration>
-        </plugin>
-		
-		
+            <plugin>
+                <groupId>com.amashchenko.maven.plugin</groupId>
+                <artifactId>gitflow-maven-plugin</artifactId>
+                <version>1.21.0</version>
+                <configuration>
+                    <gitFlowConfig>
+                        <productionBranch>main</productionBranch>
+                    </gitFlowConfig>
+                    <incrementVersionAtFinish>true</incrementVersionAtFinish>
+                    <gitPushOptions>merge_request.create merge_request.target=develop</gitPushOptions>
+                    <!-- optional configuration -->
+                    <fetchRemote>false</fetchRemote>
+                </configuration>
+                <dependencies>
+                    <dependency>
+                        <groupId>org.codehaus.mojo</groupId>
+                        <artifactId>versions-maven-plugin</artifactId>
+                        <version>2.12.0</version>
+                    </dependency>
+                </dependencies>
+            </plugin>
         </plugins>
     </build>
 
